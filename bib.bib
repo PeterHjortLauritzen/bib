@@ -33,29 +33,24 @@
 @string{acp      = "Atmospheric Chem. Phys."}
 @string{jm       = "J. Meteorol."}
 
-@article {hybrid_coord,
-        title = {An energy and angular momentum conserving finite-difference scheme hybrid coordinates and medium range weather forecasts},
-        number = {28},
-        year = {1981},
-        month = {11},
-        pages = {68},
-        institution = {ECMWF},
-        type = {Technical Report},
-        address = {Shinfield Park, Reading},
-        url = {https://www.ecmwf.int/node/12284},
-        author = {Adrian Simmons and Str{\"u}fing, R.}
+@article{W2007JMSJ,
+title={The evolution of dynamical cores for global atmospheric models},
+volume={85},
+journal=jmsj,
+author={D. Williamson},
+year={2007},
+pages={241-269},
 }
 
-
-@techreport{FV3,
-  author      = {L. Harris and Linjiong Zhou and Xi Chen and Jan-Huey Chen},
-  title       = {The {GFDL} Finite-Volume Cubed-Sphere Dynamical Core: Release 201912},
-  institution = {{G}eophysical {F}luid {D}ynamics {L}aboratory ({U}.{S}.)},
-  year        = {2020},
-  doi         = {10.25923/7h88-c534},
-  type        = {{NOAA} technical memorandum {OAR} {GFDL} ; 2020-001}
+@article{HR2018JAMES,
+  title={An Idealized Test of the Response of the Community Atmosphere Model to Near-Grid-Scale Forcing Across Hydrostatic Resolutions},
+  author={Herrington, A R and Reed, K A},
+  journal=james,
+  volume={10},
+  number={2},
+  pages={560--575},
+  year={2018},
 }
-
 
 @article{LetAl2022JAMES,
 author = {P.H. Lauritzen and N.K.-R. Kevlahan and T. Toniazzo and C. Eldred and T. Dubos and A. Gassmann and V.E. Larson and C. Jablonowski and O. Guba and B. Shipway and B.E.  Harrop and F. Lemari\'e and R. Tailleux and A.R. Herrington and W. Large and P.J.  Rasch and A.S.  Donahue and H. Wan and A. Conley and J.T. Bacmeister},
@@ -68,6 +63,44 @@ doi = {},
 year = {2022},
 note = {submitted}
 }
+
+@INPROCEEDINGS {HOMMEXX-NH,
+author = {L. Bertagna and O. Guba and M. Taylor and J. Foucar and J. Larkin and A. Bradley and S. Rajamanickam and A. Salinger},
+booktitle = {2020 SC20: International Conference for High Performance Computing, Networking, Storage and Analysis (SC)},
+title = {A Performance-Portable Nonhydrostatic Atmospheric Dycore for the Energy Exascale Earth System Model Running at Cloud-Resolving Resolutions},
+year = {2020},
+volume = {},
+issn = {},
+pages = {1304-1317},
+keywords = {atmospheric modeling;multicore processing;high performance computing},
+doi = {10.1109/SC41405.2020.00096},
+url = {https://doi.ieeecomputersociety.org/10.1109/SC41405.2020.00096},
+publisher = {IEEE Computer Society},
+address = {Los Alamitos, CA, USA},
+month = {nov}
+}
+
+
+@article {CESM_simpler_models,
+        title = {When less is more: Opening the door to simpler climate models},
+	journal = {EOS},
+        number = {98},
+        year = {2017},
+        doi   = {10.1029/2017EO079417},
+        author = {L.M. Polvani and A. Clement, B. Medeiros and J.J. Benedict and I.R. Simpson}
+}
+
+@article{ZetAl2015QJRMS,
+author = {Z\"angl, G\"unther and Reinert, Daniel and R\'ipodas, Pilar and Baldauf, Michael},
+title = {The {ICON} ({ICO}sahedral {N}on-hydrostatic) modelling framework of {DWD} and {MPI-M}: {D}escription of the non-hydrostatic dynamical core},
+journal = qjrms,
+volume = {141},
+number = {687},
+pages = {563-579},
+doi = {https://doi.org/10.1002/qj.2378},
+year = {2015}
+}
+
 
 @article{Ingersoll2005,
     author = {A. P. Ingersoll},
@@ -134,16 +167,16 @@ doi = {10.1016/j.ocemod.2016.02.005}
       doi = "10.1175/2008MWR2596.1",
       pages=      "3987 - 4004"
 }
-@article{T2017QJRMS,
-author = {Thuburn, J.},
-title = {Use of the Gibbs thermodynamic potential to express the equation of state in atmospheric models},
-journal = qjrms,
-volume = {143},
-number = {704},
-pages = {1185-1196},
-doi = {https://doi.org/10.1002/qj.3020},
-year = {2017}
-}
+%@article{T2017QJRMS,
+%author = {Thuburn, J.},
+%title = {Use of the Gibbs thermodynamic potential to express the equation of state in atmospheric models},
+%journal = qjrms,
+%volume = {143},
+%number = {704},
+%pages = {1185-1196},
+%doi = {https://doi.org/10.1002/qj.3020},
+%year = {2017}
+%}
 
 
 @article{Feistel_etal_2008,
@@ -558,11 +591,21 @@ DOI = {10.5194/gmd-8-3131-2015}
 }
 
 @misc{BIRS2019Almut,
-  author = {Almut Gassman},
+  author = {Almut Gassmann},
     title = {Energy conversions and internal entropy production in a moist atmosphere},
   note = {Lecture at "Physics--Dynamics Coupling in Earth System Models (19w5153)" workshop; see (minute 10) in lecture  \url{http://videos.birs.ca/2019/19w5153/201910151032-Gassmann.mp4}},
   howpublished={\url{https://www.birs.ca/events/2019/5-day-workshops/19w5153}},
   year={2019}
+}
+
+@article{Duran_etal:2013,
+author = {I. B. Duran and J.-F. Geley and F. Vana and J. Schmidli and R. Brozkova},
+title = {A turbulence scheme with two prognostic turbulence energies},
+year = {2018},
+volume = {75},
+pages = {3381--3402},
+journal = {jas},
+doi = 10.1175/JAS-D-18-0026.1} 
 }
 
 @Article{Dubos/Kevlahan:2013,
@@ -965,23 +1008,6 @@ year = {1987}
 }
 %
 %
-
-@INPROCEEDINGS {HOMMEXX-NH,
-author = {L. Bertagna and O. Guba and M. Taylor and J. Foucar and J. Larkin and A. Bradley and S. Rajamanickam and A. Salinger},
-booktitle = {2020 SC20: International Conference for High Performance Computing, Networking, Storage and Analysis (SC)},
-title = {A Performance-Portable Nonhydrostatic Atmospheric Dycore for the Energy Exascale Earth System Model Running at Cloud-Resolving Resolutions},
-year = {2020},
-volume = {},
-issn = {},
-pages = {1304-1317},
-keywords = {atmospheric modeling;multicore processing;high performance computing},
-doi = {10.1109/SC41405.2020.00096},
-url = {https://doi.ieeecomputersociety.org/10.1109/SC41405.2020.00096},
-publisher = {IEEE Computer Society},
-address = {Los Alamitos, CA, USA},
-month = {nov}
-}
-
 @article{Feistel_2008,
 title = {A Gibbs function for seawater thermodynamics 
 for $-6$ to $80^{o}{\rm C}$ and salinity up to $120\;{\rm g}\;{\rm kg}^{–1}$},
@@ -1535,6 +1561,16 @@ doi = {10.1175/BAMS-D-12-00121.1},
 }
 
 
+@article {WOJ2009MWR,
+      author = "David L. Williamson and Jerry G. Olson and Christiane Jablonowski",
+      title = "Two Dynamical Core Formulation Flaws Exposed by a Baroclinic Instability Test Case",
+      journal = mwr,
+      year = "2009",
+      volume = "137",
+      number = "2",
+      doi = "10.1175/2008MWR2587.1",
+      pages=      "790 - 796"
+}
 
 
 
@@ -1950,18 +1986,6 @@ NUMBER = {5},
 PAGES = {1299--1313},
 DOI = {10.5194/gmd-8-1299-2015}
 }
-
-@article{LetAl2015MWR,
-author = {Peter H. Lauritzen and Mark A. Taylor and Paul A. Ullrich and Julio T Bacmesiter and S. Goldhaber},
-title = {Physics-dynamics coupling with Galerkin methods: equal-area physics grid},
-journal = {Mon. Wea. Rev.},
-optvolume = {},
-optdoi = {},
-optpages = {},
-year = {2015},
-note = {in prep.}
-}
-
 
 @article {LetAl2016MWR,
 author = {Peter H. Lauritzen and Mark A. Taylor and Paul A. Ullrich and Julio T Bacmesiter and S. Goldhaber},
@@ -3830,6 +3854,194 @@ journal = {Int. J. High. Perform. C.},
 note = {in prep.}
 }
 
+@article {W2008TELLUS,
+author = {D. Williamson},
+title = {Convergence of aqua-planet simulations with increasing resolution in the Community Atmospheric Model, Version 3},
+journal = {Tellus A},
+volume = {60},
+number = {5},
+doi = {10.1111/j.1600-0870.2008.00339.x},
+pages = {848--862},
+year = {2008},
+}
+
+
+@article{J2017JAMES,
+  title={Vertical velocity in the gray zone},
+  author={Jeevanjee, Nadir},
+  journal=james,
+  volume={9},
+  number={6},
+  pages={2304--2316},
+  year={2017},
+  DOI={10.1002/2017MS001059}
+}
+
+@article{WETAL1997MWR,
+  title={The resolution dependence of explicitly modeled convective systems},
+  author={Weisman, Morris L and Skamarock, William C and Klemp, Joseph B},
+  journal={Monthly Weather Review},
+  volume={125},
+  number={4},
+  pages={527--548},
+  year={1997},
+  DOI={10.1175/1520-0493(1997)125<0527:TRDOEM>2.0.CO;2}
+}
+
+@inproceedings{B1991ECMWF,
+  title={Numerical schemes for parameterizations},
+  author={Beljaars, ACM},
+  booktitle={Proc. ECMWF Seminar on Numerical Methods in Atmospheric Models, Reading, United Kingdom, ECMWF, 1991},
+  volume={2},
+  pages={1--42},
+  year={1991}
+}
+
+@article{DV2000JCLIM,
+  title={Climates at the last glacial maximum: Influence of model horizontal resolution},
+  author={Dong, Buwen and Valdes, Paul J},
+  journal={Journal of climate},
+  volume={13},
+  number={9},
+  pages={1554--1573},
+  year={2000}
+}
+
+@article{GETAL2005JAS,
+  title={Diagnosis of subtropical humidity dynamics using tracers of last saturation},
+  author={Galewsky, Joseph and Sobel, Adam and Held, Isaac},
+  journal=jas,
+  volume={62},
+  number={9},
+  pages={3353--3367},
+  year={2005}
+}
+
+@article{H1994JGR,
+  title={Parameterization of moist convection in the National Center for Atmospheric Research community climate model (CCM2)},
+  author={Hack, James J},
+  journal=jgra,
+  volume={99},
+  number={D3},
+  pages={5551--5568},
+  year={1994},
+  publisher={Wiley Online Library}
+}
+
+@article{HS1999JAS,
+  title={The surface branch of the zonally averaged mass transport circulation in the troposphere},
+  author={Held, Isaac M and Schneider, Tapio},
+  journal=jas,
+  volume={56},
+  number={11},
+  pages={1688--1697},
+  year={1999}
+}
+
+@article{HB1993JCLIM,
+  title={Local versus nonlocal boundary-layer diffusion in a global climate model},
+  author={Holtslag, AAM and Boville, BA},
+  journal=jc,
+  volume={6},
+  number={10},
+  pages={1825--1842},
+  year={1993}
+}
+
+@article{KW1991JGR,
+  title={Dependence of cloud amount on horizontal resolution in the National Center for Atmospheric Research Community Climate Model},
+  author={Kiehl, JT and Williamson, D L},
+  journal=jgra,
+  volume={96},
+  number={D6},
+  pages={10955--10980},
+  year={1991},
+  publisher={Wiley Online Library}
+}
+-
+@article{L2013EOS,
+  title={A hierarchical evaluation of regional climate simulations},
+  author={Leung, L Ruby and Ringler, Todd and Collins, William D and Taylor, Mark and Ashfaq, Moetasim},
+  journal={Eos, Transactions American Geophysical Union},
+  volume={94},
+  number={34},
+  pages={297--298},
+  year={2013},
+  publisher={Wiley Online Library}
+}
+
+@techreport{TETAL2011SANDIA,
+  title={A Variable Resolution Spectral Element Dynamical Core in the Community Atmospheric Model.},
+  author={Taylor, Mark A and Overfelt, James R and Levy, Michael Nathan},
+  year={2011},
+  institution={Sandia National Lab.(SNL-NM), Albuquerque, NM (United States)}
+}
+
+@article{LETAL2011TELLUS,
+  title={Impact of horizontal resolution on simulation of precipitation extremes in an aqua-planet version of Community Atmospheric Model (CAM3)},
+  author={Li, Fuyu and Collins, William D and Wehner, Michael F and Williamson, David L and Olson, Jerry G and Algieri, Christopher},
+  journal={Tellus A: Dynamic Meteorology and Oceanography},
+  volume={63},
+  number={5},
+  pages={884--892},
+  year={2011},
+  publisher={Taylor \& Francis}
+}
+
+@article{LETAL2015JCLIM,
+  title={Toward the dynamical convergence on the jet stream in aquaplanet AGCMs},
+  author={Lu, Jian and Chen, Gang and Leung, L Ruby and Burrows, D Alex and Yang, Qing and Sakaguchi, Koichi and Hagos, Samson},
+  journal={Journal of Climate},
+  volume={28},
+  number={17},
+  pages={6763--6782},
+  year={2015}
+}
+
+@article{OETAL2013JCLIM, 
+title={Observed Scaling in Clouds and Precipitation and Scale Incognizance in Regional to Global Atmospheric Models}, 
+volume={26}, DOI={10.1175/jcli-d-13-00005.1}, 
+number={23}, 
+journal={Journal of Climate}, 
+author={O'Brien, Travis A. and Li, Fuyu and Collins, William D. and Rauscher, Sara A. and Ringler, Todd D. and Taylor, Mark and Hagos, Samson M. and Leung, L. Ruby}, 
+year={2013}, 
+pages={9313<E2><80><93>9333}
+}
+
+@article{PETAL2014JCLIM, 
+title={Integrating Cloud Processes in the Community Atmosphere Model, Version 5}, 
+volume={27}, 
+DOI={10.1175/jcli-d-14-00087.1}, 
+number={18}, 
+journal={Journal of Climate}, 
+author={Park, Sungsu and Bretherton, Christopher S. and Rasch, Philip J.}, 
+year={2014}, 
+pages={6821<E2><80><93>6856}
+}
+
+@article{P1999GM, 
+title={Subtropical water vapor as a mediator of rapid global climate change}, 
+DOI={10.1029/gm112p0339}, 
+journal={Mechanisms of Global Climate Change at Millennial Time Scales Geophysical Monograph Series}, 
+author={Pierrehumbert, Raymond T.}, 
+year={1999}, 
+pages={339<E2><80><93>361}
+}
+
+
+
+
+@article{HK2020QJRMS,
+  title={On resolution sensitivity in the Community Atmosphere Model},
+  author={Herrington, Adam R and Reed, Kevin A},
+  journal=qjrms,
+  volume={146},
+  number={733},
+  pages={3789--3807},
+  year={2020},
+  publisher={Wiley Online Library}
+}
+
 
 
 @article{WD2011JCP,
@@ -4679,6 +4891,20 @@ equations},
   year = 	 {1992}
 }
 
+@Book{Adkins1968,
+author = {C. J. Adkins},
+title = {Equilibrium Thermodynamics},
+publisher = {McGraw-Hill},
+year = {1968}
+}
+
+@Book{LL59,
+author={L. D. Landau and E. M. Lifschitz},
+title= {Fluid Mechanics},
+publisher={Pergamon Press},
+year={1968}
+}
+
 @Article{KB1995JAS,
   author = 	 {J. N. Koshyk and G. J. Boer},
   title = 	 {Parametrization of dynamical subgrid-scale processes in a spectral
@@ -4996,7 +5222,7 @@ opturl = "http://www.sciencedirect.com/science/article/B6VH3-4T3M6F9-B/2/eecee69
 }
 
 @Article{LJTN2010JAMES,
-  author = 	 {P. H. Lauritzen and C. Jablonowski and M. Taylor and  R. D. Nair},
+  author = 	 {P.H. Lauritzen and C. Jablonowski and M. Taylor and  R. D. Nair},
   title = 	 {Rotated versions of the Jablonowski steady-state and baroclinic wave test cases: A dynamical core intercomparison},
   journal = 	 james,
   year = 	 {2010},
@@ -9336,7 +9562,7 @@ DOI = {10.5194/gmd-11-1971-2018}
 }
 
 @article {LetAl2018JAMES,
-author = {P. H. Lauritzen and R.D. Nair and  A.R. Herrington and P. Callaghan and S. Goldhaber and J.M. Dennis and  Julio T. Bacmeister and  B. Eaton and  C.M. Zarzycki and  Mark A. Taylor and A. Gettelman and   R.B. Neale and  B. Dobbins and  K.A. Reed and T. Dubos},
+author = {Peter H. Lauritzen and R.D. Nair and  A.R. Herrington and P. Callaghan and S. Goldhaber and J.M. Dennis and  Julio T. Bacmeister and  B. Eaton and  C.M. Zarzycki and  Mark A. Taylor and A. Gettelman and   R.B. Neale and  B. Dobbins and  K.A. Reed and T. Dubos},
 title = {{NCAR} release of {CAM}-{SE} in {CESM}2.0: A reformulation of the spectral-element dynamical core in dry-mass vertical coordinates with comprehensive treatment of condensates and energy},
 journal = james,
 volume = {10},
@@ -10828,7 +11054,7 @@ eprint = {
 author = { V. E. Larson },
 title = { {CLUBB-SILHS: A} parameterization of subgrid variability in the atmosphere  },
 year = {2017},
-note = { arXiv preprint arXiv:1711.03675v3 }
+note = { arXiv preprint arXiv:1711.03675v4 }
 }
 
 @article{ bogenschutz_et_al_2013a,
@@ -11060,13 +11286,63 @@ isbn="978-3-030-26980-7"
 @unpublished{Eldred2021a,
 author="Eldred, Christopher and Dubos, Thomas and Gay-Balmaz, Francois and Taylor, Mark and Guba, Oksana",
 title="Geometric formulations for {GFD} in {L}agrangian vertical coordinates",
+year="2022",
 note="in preparation"
 }
 
 @unpublished{Eldred2021b,
 author="Eldred, Christopher and Taylor, Mark and Guba, Oksana",
 title="Thermodynamically consistent versions of approximations used in modelling moist air",
-note="in preparation"
+note="revising",
+journal=qjrms,
+year="2022"
+}
+
+@unpublished{Bowen2022a,
+author="Bowen, Paul and Thuburn, John",
+title="Consistent and flexible thermodynamics in atmospheric
+models using internal energy as a thermodynamic potential.
+{P}art I: {E}quilibrium regime",
+year="2022",
+journal=qjrms,
+note="under review"
+}
+
+@unpublished{Bowen2022b,
+author="Bowen, Paul and Thuburn, John",
+title="Consistent and flexible thermodynamics in atmospheric
+models using internal energy as a thermodynamic potential.
+{P}art II: {N}on-equilibrium regime",
+year="2022",
+note="under review at QJRMS"
+}
+
+@article{Thuburn2017a,
+author = {Thuburn, J.},
+title = {{C}orrigendum: Use of the {G}ibbs thermodynamic potential to express the equation of state in atmospheric models},
+journal = {Quarterly Journal of the Royal Meteorological Society},
+volume = {144},
+number = {711},
+pages = {632-632},
+doi = {https://doi.org/10.1002/qj.3232},
+url = {https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.3232},
+eprint = {https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/qj.3232},
+year = {2018}
+}
+
+@article{Thuburn2017,
+author = {Thuburn, J.},
+title = {Use of the {G}ibbs thermodynamic potential to express the equation of state in atmospheric models},
+journal = {Quarterly Journal of the Royal Meteorological Society},
+volume = {143},
+number = {704},
+pages = {1185-1196},
+keywords = {Gibbs function, thermodynamic consistency, pseudo-incompressible, blended equations, physics–dynamics coupling, semi-implicit, SLICE},
+doi = {https://doi.org/10.1002/qj.3020},
+url = {https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/qj.3020},
+eprint = {https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/qj.3020},
+abstract = {The thermodynamics of moist processes is complicated, and in typical atmospheric models numerous approximations are made. However, they are not always made in a self-consistent way, which could lead to spurious sources or sinks of energy and entropy. One way to ensure self-consistency is to derive all thermodynamic quantities from a thermodynamic potential such as the Gibbs function. Approximations may be made to the Gibbs function; these approximations are inherited by all derived quantities in a way that guarantees self-consistency. Here, the feasibility of using the Gibbs function in an atmospheric model is demonstrated through the development of a semi-implicit, semi-Lagrangian vertical slice model, and its application to a standard buoyant bubble test case. The flexibility of the approach is also demonstrated by running the test case with four different equations of state corresponding to dry air, moist air that is saturated, a pseudo-incompressible fluid, and an incompressible fluid. A recently presented ‘blended’ equation set that unifies the dry fully compressible case and the pseudo-incompressible case is also easily accommodated.},
+year = {2017}
 }
 
 @article{ferguson:16,
@@ -11154,7 +11430,7 @@ precipitation in cloudy atmospheres},
 
 @article{adams2019lfric,
   title={LFRic: Meeting the challenges of scalability and performance portability in Weather and Climate models},
-  author={Adams, Samantha V and Ford, Rupert W and Hambley, M and Hobson, JM and Kav{\v{c}}i{\v{c}}, I and Maynard, Christopher M and Melvin, Thomas and M{\"u}ller, Eike Hermann and Mullerworth, S and Porter, AR and others},
+  author={S.V. Adams and R.W. Ford and M. Hambley and J.M. Hobson and I. Kav{\v{c}}i{\v{c}} and C.M. Maynard and T. Melvin and E.G. M{\"u}ller and S. Mullerworth and A.R. Porter and others},
   journal={Journal of Parallel and Distributed Computing},
   volume={132},
   pages={383--396},
@@ -11173,237 +11449,15 @@ precipitation in cloudy atmospheres},
   publisher={Wiley Online Library}
 }
 
-@article{W2007JMSJ,
-title={The evolution of dynamical cores for global atmospheric models},
-volume={85},
-journal=jmsj,
-author={D. Williamson},
-year={2007},
-pages={241-269},
-}
-
-@article{HR2018JAMES,
-  title={An Idealized Test of the Response of the Community Atmosphere Model to Near-Grid-Scale Forcing Across Hydrostatic Resolutions},
-  author={Herrington, A R and Reed, K A},
-  journal=james,
-  volume={10},
-  number={2},
-  pages={560--575},
-  year={2018},
-}
-
-@article{HL2018MWR,
-  title={Physics-dynamics coupling with element-based high-order Galerkin methods: quasi equal-area physics grid},
-  author={Herrington, A. R. and Lauritzen, P.H. and Taylor, M. A. and Goldhaber, S. and Eaton, Brian E. and Bacmeister, J.T. and Reed, K.A. and Ullrich, P.A.},
-  journal=mwr,
-  volume={47},
-  pages={69--84},
-  year={2018},
-  DOI={10.1175/MWR-D-18-0136.1},
-}
-
-@article{HETAL2019JAMESb,
-  title={Exploring a lower resolution physics grid in CAM-SE-CSLAM},
-  author={Herrington, A R and Lauritzen, Peter H and Reed, Kevin A and Goldhaber, Steve and Eaton, Brian E},
+@article{larson_2019_momentum,
+  title={Momentum transport in shallow cumulus clouds and its parameterization by higher-order closure},
+  author={Larson, Vincent E and Domke, Steffen and Griffin, Brian M},
   journal={Journal of Advances in Modeling Earth Systems},
   volume={11},
+  number={11},
+  pages={3419--3442},
   year={2019},
   publisher={Wiley Online Library}
-}
-
-@article{HK2020QJRMS,
-  title={On resolution sensitivity in the Community Atmosphere Model},
-  author={Herrington, Adam R and Reed, Kevin A},
-  journal={Quarterly Journal of the Royal Meteorological Society},
-  volume={146},
-  number={733},
-  pages={3789--3807},
-  year={2020},
-  publisher={Wiley Online Library}
-}
-
-@article {W2008TELLUS,
-author = {D. Williamson},
-title = {Convergence of aqua-planet simulations with increasing resolution in the Community Atmospheric Model, Version 3},
-journal = {Tellus A},
-volume = {60},
-number = {5},
-doi = {10.1111/j.1600-0870.2008.00339.x},
-pages = {848--862},
-year = {2008},
-}
-
-+++ARH
-
-@misc{AMPproj,
-  title={{Cheyenne: HPE/SGI ICE XA System (AMP Model Developments)}},
-  author={{Computational and Information Systems Laboratory}},
-  institution={National Center for Atmospheric Research},
-  address={Boulder, CO},
-  year={2017},
-  DOI={10.5065/D6RX99HX}
-}
-
-@article{J2017JAMES,
-  title={Vertical velocity in the gray zone},
-  author={Jeevanjee, Nadir},
-  journal={Journal of Advances in Modeling Earth Systems},
-  volume={9},
-  number={6},
-  pages={2304--2316},
-  year={2017},
-  DOI={10.1002/2017MS001059}
-}
-
-@article{WETAL1997MWR,
-  title={The resolution dependence of explicitly modeled convective systems},
-  author={Weisman, Morris L and Skamarock, William C and Klemp, Joseph B},
-  journal={Monthly Weather Review},
-  volume={125},
-  number={4},
-  pages={527--548},
-  year={1997},
-  DOI={10.1175/1520-0493(1997)125<0527:TRDOEM>2.0.CO;2}
-}
-
-@inproceedings{B1991ECMWF,
-  title={Numerical schemes for parameterizations},
-  author={Beljaars, ACM},
-  booktitle={Proc. ECMWF Seminar on Numerical Methods in Atmospheric Models, Reading, United Kingdom, ECMWF, 1991},
-  volume={2},
-  pages={1--42},
-  year={1991}
-}
-
-@article{DV2000JCLIM,
-  title={Climates at the last glacial maximum: Influence of model horizontal resolution},
-  author={Dong, Buwen and Valdes, Paul J},
-  journal={Journal of climate},
-  volume={13},
-  number={9},
-  pages={1554--1573},
-  year={2000}
-}
-
-@article{GETAL2005JAS,
-  title={Diagnosis of subtropical humidity dynamics using tracers of last saturation},
-  author={Galewsky, Joseph and Sobel, Adam and Held, Isaac},
-  journal={Journal of the atmospheric sciences},
-  volume={62},
-  number={9},
-  pages={3353--3367},
-  year={2005}
-}
-
-@article{H1994JGR,
-  title={Parameterization of moist convection in the National Center for Atmospheric Research community climate model (CCM2)},
-  author={Hack, James J},
-  journal={Journal of Geophysical Research: Atmospheres},
-  volume={99},
-  number={D3},
-  pages={5551--5568},
-  year={1994},
-  publisher={Wiley Online Library}
-}
-
-@article{HS1999JAS,
-  title={The surface branch of the zonally averaged mass transport circulation in the troposphere},
-  author={Held, Isaac M and Schneider, Tapio},
-  journal={Journal of the atmospheric sciences},
-  volume={56},
-  number={11},
-  pages={1688--1697},
-  year={1999}
-}
-
-@article{HB1993JCLIM,
-  title={Local versus nonlocal boundary-layer diffusion in a global climate model},
-  author={Holtslag, AAM and Boville, BA},
-  journal={Journal of Climate},
-  volume={6},
-  number={10},
-  pages={1825--1842},
-  year={1993}
-}
-
-@article{KW1991JGR,
-  title={Dependence of cloud amount on horizontal resolution in the National Center for Atmospheric Research Community Climate Model},
-  author={Kiehl, JT and Williamson, D L},
-  journal={Journal of Geophysical Research: Atmospheres},
-  volume={96},
-  number={D6},
-  pages={10955--10980},
-  year={1991},
-  publisher={Wiley Online Library}
-}
-
-@article{L2013EOS,
-  title={A hierarchical evaluation of regional climate simulations},
-  author={Leung, L Ruby and Ringler, Todd and Collins, William D and Taylor, Mark and Ashfaq, Moetasim},
-  journal={Eos, Transactions American Geophysical Union},
-  volume={94},
-  number={34},
-  pages={297--298},
-  year={2013},
-  publisher={Wiley Online Library}
-}
-
-@techreport{TETAL2011SANDIA,
-  title={A Variable Resolution Spectral Element Dynamical Core in the Community Atmospheric Model.},
-  author={Taylor, Mark A and Overfelt, James R and Levy, Michael Nathan},
-  year={2011},
-  institution={Sandia National Lab.(SNL-NM), Albuquerque, NM (United States)}
-}
-
-@article{LETAL2011TELLUS,
-  title={Impact of horizontal resolution on simulation of precipitation extremes in an aqua-planet version of Community Atmospheric Model (CAM3)},
-  author={Li, Fuyu and Collins, William D and Wehner, Michael F and Williamson, David L and Olson, Jerry G and Algieri, Christopher},
-  journal={Tellus A: Dynamic Meteorology and Oceanography},
-  volume={63},
-  number={5},
-  pages={884--892},
-  year={2011},
-  publisher={Taylor \& Francis}
-}
-
-@article{LETAL2015JCLIM,
-  title={Toward the dynamical convergence on the jet stream in aquaplanet AGCMs},
-  author={Lu, Jian and Chen, Gang and Leung, L Ruby and Burrows, D Alex and Yang, Qing and Sakaguchi, Koichi and Hagos, Samson},
-  journal={Journal of Climate},
-  volume={28},
-  number={17},
-  pages={6763--6782},
-  year={2015}
-}
-
-@article{OETAL2013JCLIM, 
-title={Observed Scaling in Clouds and Precipitation and Scale Incognizance in Regional to Global Atmospheric Models}, 
-volume={26}, DOI={10.1175/jcli-d-13-00005.1}, 
-number={23}, 
-journal={Journal of Climate}, 
-author={O'Brien, Travis A. and Li, Fuyu and Collins, William D. and Rauscher, Sara A. and Ringler, Todd D. and Taylor, Mark and Hagos, Samson M. and Leung, L. Ruby}, 
-year={2013}, 
-pages={9313–9333}
-}
-
-@article{PETAL2014JCLIM, 
-title={Integrating Cloud Processes in the Community Atmosphere Model, Version 5}, 
-volume={27}, 
-DOI={10.1175/jcli-d-14-00087.1}, 
-number={18}, 
-journal={Journal of Climate}, 
-author={Park, Sungsu and Bretherton, Christopher S. and Rasch, Philip J.}, 
-year={2014}, 
-pages={6821–6856}
-}
-
-@article{P1999GM, 
-title={Subtropical water vapor as a mediator of rapid global climate change}, 
-DOI={10.1029/gm112p0339}, 
-journal={Mechanisms of Global Climate Change at Millennial Time Scales Geophysical Monograph Series}, 
-author={Pierrehumbert, Raymond T.}, 
-year={1999}, 
-pages={339–361}
 }
 
 @article{RK1998JCLIM, 
